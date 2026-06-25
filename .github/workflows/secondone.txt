@@ -1,0 +1,13 @@
+name: workflow-2
+on: push
+jobs: 
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: This is Build
+      run: echo "PERFROM BUILD"
+  Deploy: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: This is Deploy
+      run: echo "PERFROM Deploy"

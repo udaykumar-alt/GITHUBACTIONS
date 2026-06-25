@@ -1,7 +1,5 @@
 name: workflow -3
-on: 
- - push
- - workflow_dispatch
+on: workflow_dispatch
 jobs:
     linux-job:
      runs-on: ubuntu-latest

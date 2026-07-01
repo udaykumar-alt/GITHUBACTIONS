@@ -1,0 +1,24 @@
+name: workflow -3
+on: workflow_dispatch
+env: 
+  name: Practice env
+  Rel:  '3.0'
+  names: step2
+jobs:
+    linux-job:
+     runs-on: ubuntu-latest
+     steps: 
+     - name:
+       run: |
+            pwd
+            echo "This is test step and $name and $Rel"
+     - name: checking docker version
+       run:  |
+            echo $names
+    Linux-job1:
+     needs: linux-job
+     runs-on: ubuntu-latest
+     steps:
+     - name: display Date
+       run: date
+   
